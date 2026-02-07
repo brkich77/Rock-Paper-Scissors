@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0,0,0,0.6);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #000;
+    width: 90%;
+    max-width: 500px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.score h3 {
+    font-size: 1.2rem;
+}
+
+.score p {
+    font-size: 1.5rem;
+    margin-top: 5px;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.choice {
+    font-size: 3rem;
+    padding: 10px 20px;
+    border: none;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.choice:hover {
+    transform: scale(1.2);
+    background: rgba(255,255,255,0.3);
+}
+
+.result-container {
+    margin-bottom: 20px;
+}
+
+.hands {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    font-size: 3rem;
+}
+
+.hand {
+    transition: transform 0.5s;
+}
+
+#result-text {
+    font-size: 1.3rem;
+    margin-top: 10px;
+    min-height: 30px;
+}
+
+#reset-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ff4b5c;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+#reset-btn:hover {
+    transform: scale(1.05);
+    background: #ff6b81;
+}
