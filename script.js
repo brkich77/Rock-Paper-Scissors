@@ -42,12 +42,12 @@ function getWinner(player, computer) {
         (player === 'rock' && computer === 'scissors') ||
         (player === 'paper' && computer === 'rock') ||
         (player === 'scissors' && computer === 'paper')
-    ) return 'You';
+    ) return 'Player';
     return 'Computer';
 }
 
 function updateScore(winner) {
-    if(winner === 'You') playerScore++;
+    if(winner === 'Player') playerScore++;
     if(winner === 'Computer') computerScore++;
     playerScoreEl.textContent = playerScore;
     computerScoreEl.textContent = computerScore;
@@ -71,3 +71,4 @@ resetBtn.addEventListener('click', () => {
     computerHand.textContent = '❓';
     resultText.textContent = '';
 });
+
